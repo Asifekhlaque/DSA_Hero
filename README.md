@@ -75,3 +75,38 @@ void main(){
 		move=move->next;
 		count=count+1;
 	}
+```
+- Create a Linked list
+```c
+int count=0,pos,i=1;
+// Create a Linked list
+move=head;
+	while(move!=NULL){ //It will include the last node
+		move=move->next;
+		count=count+1;
+	}
+	printf("\nCout %d",count);
+	// Add new node at the given location
+	printf("\nEnter the location");
+	scanf("%d",&pos);
+	if(pos>count){
+		printf("Invalid");
+	}
+	else{
+		move=head;
+		while(i<pos){
+			move=move->next;
+			i++;
+		}
+		newnode=(struct table*)malloc(sizeof(struct table));
+		printf("\nEnter the value");
+		scanf("%d",&newnode->num);
+		newnode->next=move->next;
+		move->next=newnode;
+	}
+	printf("\nUpdated LinkedList\n");
+	move=head;
+	while(move!=NULL){ //It will include the last node
+		printf("%d\t",move->num);
+		move=move->next;
+	}
