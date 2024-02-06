@@ -36,7 +36,7 @@ void main(){
 	}
 }
 ```
-Singly linked list 
+# Singly linked list 
 - Add new node at the begning
 ```c
         // Create a Linked list
@@ -54,3 +54,24 @@ Singly linked list
 		move=move->next;
 	}
 ```
+- Add new node at the end
+```c
+ // Create a Linked list
+// Add new node at the end
+	newnode=(struct table*)malloc(sizeof(struct table));
+	printf("\nEnter the node:\t");
+	scanf("%d",&newnode->num);
+	newnode->next=NULL;
+	move=head;
+	while(move->next!=NULL){ // if you write move->!=NULL the loop condition will no true and you get no output
+		move=move->next; // Moveing the while loop
+	}
+	move->next=newnode;
+	
+	printf("\nUpdated LinkedList\n");
+	move=head;
+	while(move!=NULL){ //It will include the last node
+		printf("%d\t",move->num);
+		move=move->next;
+		count=count+1;
+	}
