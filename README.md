@@ -4,7 +4,7 @@
 ## What is a Linked List?
 
 A linked list is a linear data structure where elements are stored in nodes, and each node points to the next node in the sequence. Unlike arrays, linked lists do not have a fixed size, and their elements are not stored in contiguous memory locations.
-```Digram
+```c
 Head --> [Data1 | Next] --> [Data2 | Next] --> [Data3 | Next] --> ... --> [DataN | Null]
 ```
 ## Basic Components
