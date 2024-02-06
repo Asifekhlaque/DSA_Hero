@@ -39,7 +39,7 @@ void main(){
 Singly linked list 
 - Add new node at the begning
 ```c
-// Create a Linked list
+        // Create a Linked list
 	// Add new node at the begning
 	newnode=(struct table*)malloc(sizeof(struct table));
 	printf("\nEnter the node:\t");
