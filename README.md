@@ -3,7 +3,7 @@
 Basic Creation and Insertion in linked list using c language.
 ```c
 #include<stdio.h>
-#include<malloc.h> // :\ Don't know
+#include<malloc.h> 
 struct table{
 	int num;
 	struct table *next;
